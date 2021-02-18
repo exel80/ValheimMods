@@ -6,7 +6,7 @@ using HarmonyLib;
 
 namespace Disabler
 {
-    [BepInPlugin("dev.exel80.disabler", "Disabler", "1.0.0")]
+    [BepInPlugin("dev.exel80.disabler", "Disabler", "1.0.1")]
     public class Disabler : BaseUnityPlugin
     {
         public static ConfigEntry<bool> bedCheckFire;
@@ -19,21 +19,15 @@ namespace Disabler
         void Awake()
         {
             //Bed Settings
-            bedCheckFire = Config.Bind("Bed", "CheckFire", true, "Disable requirement of fire nearby the bed");
-            bedCheckEnemies = Config.Bind("Bed", "CheckEnemies", false, "Disable requirement of killing nearby enemies");
-            bedCheckExposure = Config.Bind("Bed", "CheckExposure", false, "Disable requirement of building a roof for the bed");
-            bedCheckWet = Config.Bind("Bed", "CheckWet", true, "Disable requirement of being dry before interacting with the bed");
+            bedCheckFire = Config.Bind("Bed", "Fire", true, "Disable requirement of fire nearby the bed");
+            bedCheckEnemies = Config.Bind("Bed", "Enemies", false, "Disable requirement of killing nearby enemies");
+            bedCheckExposure = Config.Bind("Bed", "Exposure", false, "Disable requirement of building a roof for the bed");
+            bedCheckWet = Config.Bind("Bed", "Wet", true, "Disable requirement of being dry before interacting with the bed");
 
             //CraftingStation Settings
-            craftingstationCheckRoof = Config.Bind("CraftingStation", "CheckRoof", true, "Disable requirement of roof when using the crafting station(s)");
+            craftingstationCheckRoof = Config.Bind("CraftingStation", "Roof", true, "Disable requirement of roof when using the crafting station(s)");
 
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), null);
-        }
-
-        private void Config_ConfigReloaded(object sender, EventArgs e)
-        {
-            Logger.LogMessage("Config has beend reloaded!");
-            throw new NotImplementedException();
         }
 
         #region CraftingStation
