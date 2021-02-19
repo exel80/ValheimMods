@@ -66,6 +66,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "valheim_Data", "valheim_Dat
 		valheim_Data\UnityLinkerToEditorData.json = valheim_Data\UnityLinkerToEditorData.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterMode", "MasterMode\MasterMode.csproj", "{07B0C477-475F-45C9-8979-8389C244F6DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{81CB8AAA-9025-4BB4-8843-05F383684EAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +80,10 @@ Global
 		{61B2A662-6DD4-437E-926C-8505E8E6C44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61B2A662-6DD4-437E-926C-8505E8E6C44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61B2A662-6DD4-437E-926C-8505E8E6C44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B0C477-475F-45C9-8979-8389C244F6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B0C477-475F-45C9-8979-8389C244F6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B0C477-475F-45C9-8979-8389C244F6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B0C477-475F-45C9-8979-8389C244F6DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
