@@ -18,7 +18,8 @@ using static ItemDrop.ItemData;
  *   = (empty) Not started yet
  * 
  * TODO:
- * [] All enemies besides deer and boar spawn as one/ two star or higher
+ * [X] All enemies besides deer and boar spawn as one/ two star or higher
+ *      - FIX: Sometimes Star wont appier (for greyling's)
  * [X] Crafting recipes for gear are doubled in price/ [?] include harder to find materials
  * [X] Default health without food is 1 instead of 25
  * [] Bosses deal more damage and have faster attack animations

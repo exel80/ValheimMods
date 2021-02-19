@@ -66,6 +66,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character.cs" />
     <Compile Include="MasterMode.cs" />
     <Compile Include="ObjectDB.cs" />
     <Compile Include="PlayerStats.cs" />
