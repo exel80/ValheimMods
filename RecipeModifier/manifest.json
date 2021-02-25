@@ -4,6 +4,6 @@
     "website_url": "https://github.com/exel80/ValheimMods/tree/master/RecipeModifier",
     "description": "Modify the resource cost for craft a specific type of items.",
     "dependencies": [
-        "denikson-BepInExPack_Valheim-5.4.601"
+        "denikson-BepInExPack_Valheim-5.4.602"
     ]
 }
