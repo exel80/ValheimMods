@@ -19,7 +19,7 @@ namespace MasterMode
             // Settings
             ConfigEntry<bool> bypassNeutrals = MasterModePluign.GetConfig().Bind("Enemy", "bypassNeutrals", true, "When true, level multiplier will NOT multiply Deer or Boar levels");
             ConfigEntry<Int32> minLevel = MasterModePluign.GetConfig().Bind("Enemy", "minLevel", 3, "Minimum monster level multiplier");
-            ConfigEntry<int> maxLevel = MasterModePluign.GetConfig().Bind("Enemy", "maxLevel", 5, "Maximum monster level multiplier");
+            ConfigEntry<Int32> maxLevel = MasterModePluign.GetConfig().Bind("Enemy", "maxLevel", 5, "Maximum monster level multiplier");
 
             // Make sure only modify enemies
             if (__instance.m_name.StartsWith("$enemy_"))

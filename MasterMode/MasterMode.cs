@@ -22,7 +22,8 @@ using static ItemDrop.ItemData;
  *      - FIX: Sometimes Star wont appier (for greyling's)
  * [X] Crafting recipes for gear are doubled in price/ [?] include harder to find materials
  * [X] Default health without food is 1 instead of 25
- * [] Bosses deal more damage and have faster attack animations
+ * [%] Bosses deal more damage and have faster attack animations
+ *      - Increase attack anmation to bossess
 */
 
 namespace MasterMode
