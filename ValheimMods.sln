@@ -72,7 +72,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teleporter", "Teleporter\Teleporter.csproj", "{00EEE719-CF31-4D15-8E05-E923AE5BBEA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeModifier", "RecipeMultiplier\RecipeModifier.csproj", "{2F1F6EB5-4DC0-4164-8BE6-E7280E442BD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeModifier", "RecipeModifier\RecipeModifier.csproj", "{2F1F6EB5-4DC0-4164-8BE6-E7280E442BD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
