@@ -1,0 +1,9 @@
+﻿{
+    "name": "Map Teleporter",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/exel80/ValheimMods/tree/master/Teleporter",
+    "description": "Teleporting by pinging on the map.",
+    "dependencies": [
+        "denikson-BepInExPack_Valheim-5.4.601"
+    ]
+}
