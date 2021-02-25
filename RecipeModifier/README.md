@@ -1,5 +1,5 @@
 ﻿# RecipeModifier
-Modify the resource cost to craft a specific type of items. You can modify ``double`` value from config files what ever you want.
+Modify the resource cost for craft a specific type of items. You can modify ``double`` value from config files what ever you want.
 Plugin will round the number back to ``int``, before passing it to the game.
 
 You can use this to make the game harder or easier.
