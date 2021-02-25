@@ -14,7 +14,7 @@ Config file ``dev.exel80.recipemodifier`` is inside the config folder ``<GameDir
 Changing value under ``1.0`` will reduce the amount of resource you need to craft it, and vice versa. 
 
 ```ini
-## Settings file was created by plugin RecipeMultiplier v1.0.0
+## Settings file was created by plugin RecipeModifier v1.0.0
 ## Plugin GUID: dev.exel80.recipemodifier
 
 [RecipeMultiplier]
