@@ -23,7 +23,7 @@ namespace Disabler
             bedCheckEnemies = Config.Bind("Bed", "Enemies", false, "Disable requirement of killing nearby enemies");
             bedCheckExposure = Config.Bind("Bed", "Exposure", false, "Disable requirement of building a roof for the bed");
             bedCheckWet = Config.Bind("Bed", "Wet", true, "Disable requirement of being dry before interacting with the bed");
-
+            
             //CraftingStation Settings
             craftingstationCheckRoof = Config.Bind("CraftingStation", "Roof", true, "Disable requirement of roof when using the crafting station(s)");
 
