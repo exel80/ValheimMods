@@ -1,4 +1,5 @@
 ﻿# RecipeModifier
+
 Modify the resource cost for craft a specific type of items. You can modify ``double`` value from config files what ever you want.
 Plugin will round the number back to ``int``, before passing it to the game.
 
@@ -14,8 +15,17 @@ Config file ``dev.exel80.recipemodifier`` is inside the config folder ``<GameDir
 Changing value under ``1.0`` will reduce the amount of resource you need to craft it, and vice versa. 
 
 ```ini
-## Settings file was created by plugin RecipeModifier v1.0.0
+## Settings file was created by plugin RecipeModifier v1.1.0
 ## Plugin GUID: dev.exel80.recipemodifier
+
+[General]
+
+## Allow resource cost be under one after multiplying
+## true = Resource cost can go 0
+## false = Resource cost will be 1 or higher
+# Setting type: Boolean
+# Default value: false
+AllowResourceCostUnderOne = false
 
 [RecipeMultiplier]
 

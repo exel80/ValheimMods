@@ -11,7 +11,7 @@ using static ItemDrop.ItemData;
 
 namespace RecipeModifier
 {
-    [BepInPlugin("dev.exel80.recipemodifier", "RecipeModifier", "1.0.0")]
+    [BepInPlugin("dev.exel80.recipemodifier", "RecipeModifier", "1.1.0")]
     public class RecipeModifierPlugin : BaseUnityPlugin
     {
         private static ConfigFile config;
@@ -20,11 +20,15 @@ namespace RecipeModifier
 
         private static Dictionary<ItemType, double> _multiplier;
 
+        public static ConfigEntry<bool> allowResourceCostUnderOne;
+
         private void Awake()
         {
             config = Config;
 
             logSource = Logger;
+
+            allowResourceCostUnderOne = config.Bind("General", "AllowResourceCostUnderOne", false, "Allow resource cost be under one after multiplying\ntrue = Resource cost can go 0\nfalse = Resource cost will be 1 or higher");
 
             _multiplier = InitializeResourceMultipliers();
 

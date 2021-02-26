@@ -25,7 +25,12 @@ namespace MasterMode
                 foreach (Piece.Requirement resource in item.m_resources)
                 {
                     if (RecipeModifierPlugin.GetMultipliers().TryGetValue(item.m_item.m_itemData.m_shared.m_itemType, out double value))
-                        resource.m_amount = (int)Math.Round(resource.m_amount * value);
+                    {
+                        int calc = (int)Math.Round(resource.m_amount * value);
+                        resource.m_amount = !RecipeModifierPlugin.allowResourceCostUnderOne.Value
+                            ? Math.Max(1, calc)
+                            : calc;
+                    }
                     else
                         RecipeModifierPlugin.Log(LogLevel.Error, $"Something went wrong when trying to fetch {item.m_item.m_itemData.m_shared.m_itemType} value from config file.");
                 }
