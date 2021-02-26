@@ -12,7 +12,7 @@ You can use this to make the game harder or easier.
 
 ## Config
 Config file ``dev.exel80.recipemodifier`` is inside the config folder ``<GameDirectory>\Bepinex\config`` and will be automatically generated after the first time launching the plugin.
-Changing value under ``1.0`` will reduce the amount of resource you need to craft it, and vice versa. 
+Changing value under ``1.0`` will reduce the amount of resource you need to craft it, and vice versa. If AllowResourceCostUnderOne is **false**, resource cost will not go under 1
 
 ```ini
 ## Settings file was created by plugin RecipeModifier v1.1.0
@@ -131,4 +131,5 @@ Attach_Atgeir = 1.5
 ```
 
 ## Changelog
+1.1.0 - Added new config (AllowResourceCostUnderOne) and with it new feature *(Thank you Teok#0001 for your suggestion)*
 1.0.0 - Initial release
