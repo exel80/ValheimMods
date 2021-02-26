@@ -5,7 +5,7 @@ using BepInEx.Logging;
 using HarmonyLib;
 using RecipeModifier;
 
-namespace MasterMode
+namespace RecipeModifier
 {
     [HarmonyPatch(typeof(ObjectDB), "Awake")]
     static class Recipe_Patch
